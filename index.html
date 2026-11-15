@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>松野 裕 (Yutaka MATSUNO) - Academic Profile</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans JP', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a', // slate-900
+                        secondary: '#3b82f6', // blue-500
+                        accent: '#0ea5e9', // sky-500
+                        light: '#f8fafc', // slate-50
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            color: #334155;
+            background-color: #f8fafc;
+        }
+        .section-heading {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            color: #0f172a;
+            display: inline-block;
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #3b82f6;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen selection:bg-blue-200 selection:text-blue-900">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-xl font-bold text-primary tracking-tight">Y. Matsuno</a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-sm text-gray-600 hover:text-secondary transition-colors font-medium">プロフィール</a>
+                    <a href="#career" class="text-sm text-gray-600 hover:text-secondary transition-colors font-medium">経歴・学歴</a>
+                    <a href="#publications" class="text-sm text-gray-600 hover:text-secondary transition-colors font-medium">主要業績</a>
+                    <a href="#awards" class="text-sm text-gray-600 hover:text-secondary transition-colors font-medium">受賞</a>
+                    <a href="#grants" class="text-sm text-gray-600 hover:text-secondary transition-colors font-medium">競争的資金</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-primary text-white py-24 relative overflow-hidden">
+        <!-- Abstract background pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M0 40V0H40" fill="none" stroke="currentColor" stroke-width="1"></path>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid-pattern)"></rect>
+            </svg>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
+            <div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-slate-800 flex items-center justify-center border-4 border-slate-700 shadow-xl overflow-hidden mb-8">
+                <i class="fas fa-user-tie text-6xl text-slate-400"></i>
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-bold mb-2 tracking-tight">松野 裕</h1>
+            <p class="text-xl md:text-2xl font-light text-slate-300 mb-6">Yutaka MATSUNO</p>
+            
+            <div class="inline-flex items-center space-x-2 bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700 mb-8">
+                <i class="fas fa-university text-slate-400"></i>
+                <span class="text-slate-200">日本大学 理工学部 応用情報工学科 教授</span>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://www.matsulab.org/" target="_blank" rel="noopener noreferrer" class="bg-secondary hover:bg-blue-600 text-white px-6 py-2.5 rounded-full font-medium shadow-lg transition-all flex items-center">
+                    <i class="fas fa-globe mr-2"></i>Lab Website
+                </a>
+                <a href="https://orcid.org/0000-0001-9809-0814" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-6 py-2.5 rounded-full font-medium transition-all flex items-center backdrop-blur-sm">
+                    <i class="fab fa-orcid mr-2 text-[#A6CE39]"></i>ORCID iD
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+
+        <!-- Profile & Keywords Section -->
+        <section id="about" class="scroll-mt-24">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-2">
+                    <h2 class="text-2xl section-heading">基本情報 (Biography)</h2>
+                    <div class="prose prose-slate max-w-none text-gray-700 leading-relaxed space-y-4">
+                        <p>
+                            2001年3月東京大学工学部電子工学科卒業。2003年3月、2006年3月、東京大学大学院新領域創成科学研究科基盤情報学専攻修士、博士課程修了。博士（科学）。
+                        </p>
+                        <p>
+                            東京大学情報基盤センター特任講師、名古屋大学情報連携統括本部特任講師、電気通信大学大学院情報システム学研究科助教などを経て、2015年4月より日本大学理工学部応用情報工学科准教授、2023年4月より同学科教授。
+                        </p>
+                        <p>
+                            プログラミング言語、システム保証、ディペンダビリティ、安全性などに興味を持つ。近年は自動運転システムやAIシステムの安全性保証と、アシュアランスケースを用いたステークホルダー間の合意形成に主に取り組んでいる。
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 h-full">
+                        <h3 class="font-bold text-lg text-gray-800 mb-4 border-b pb-2"><i class="fas fa-tags text-secondary mr-2"></i>研究キーワード</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-50 text-secondary border border-blue-100 text-sm px-3 py-1.5 rounded-md font-medium">ディペンダビリティ</span>
+                            <span class="bg-blue-50 text-secondary border border-blue-100 text-sm px-3 py-1.5 rounded-md font-medium">安全性 (Safety)</span>
+                            <span class="bg-blue-50 text-secondary border border-blue-100 text-sm px-3 py-1.5 rounded-md font-medium">アシュアランスケース</span>
+                            <span class="bg-blue-50 text-secondary border border-blue-100 text-sm px-3 py-1.5 rounded-md font-medium">ソフトウェア工学</span>
+                            <span class="bg-blue-50 text-secondary border border-blue-100 text-sm px-3 py-1.5 rounded-md font-medium">自動運転システム保証</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career & Education Section -->
+        <section id="career" class="scroll-mt-24">
+            <h2 class="text-2xl section-heading mb-8">経歴・学歴 (Career & Education)</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Career -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 flex items-center text-gray-800">
+                        <i class="fas fa-briefcase text-secondary mr-3 w-5 text-center"></i>職歴
+                    </h3>
+                    <div class="space-y-6 relative before:absolute before:inset-0 before:ml-2.5 before:-translate-x-px md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-gray-300 before:via-gray-300 before:to-transparent">
+                        
+                        <div class="relative flex items-start group">
+                            <div class="flex items-center justify-center w-5 h-5 rounded-full bg-secondary text-white ring-4 ring-white z-10 mt-1 shrink-0"></div>
+                            <div class="ml-6 bg-white p-4 rounded-lg shadow-sm border border-gray-100 w-full">
+                                <div class="text-sm text-secondary font-bold mb-1">2023年4月 - 現在</div>
+                                <div class="font-bold text-gray-800 text-lg">日本大学理工学部 応用情報工学科</div>
+                                <div class="text-gray-600 font-medium">教授</div>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-start group">
+                            <div class="flex items-center justify-center w-5 h-5 rounded-full bg-gray-300 ring-4 ring-white z-10 mt-1 shrink-0"></div>
+                            <div class="ml-6 p-2 w-full">
+                                <div class="text-sm text-gray-500 font-medium mb-1">2015年4月 - 2023年3月</div>
+                                <div class="font-bold text-gray-800">日本大学理工学部 応用情報工学科</div>
+                                <div class="text-gray-600 text-sm">准教授</div>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-start group">
+                            <div class="flex items-center justify-center w-5 h-5 rounded-full bg-gray-300 ring-4 ring-white z-10 mt-1 shrink-0"></div>
+                            <div class="ml-6 p-2 w-full">
+                                <div class="text-sm text-gray-500 font-medium mb-1">2013年4月 - 2015年3月</div>
+                                <div class="font-bold text-gray-800">電気通信大学 大学院情報システム学研究科</div>
+                                <div class="text-gray-600 text-sm">助教</div>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-start group">
+                            <div class="flex items-center justify-center w-5 h-5 rounded-full bg-gray-300 ring-4 ring-white z-10 mt-1 shrink-0"></div>
+                            <div class="ml-6 p-2 w-full">
+                                <div class="text-sm text-gray-500 font-medium mb-1">2012年4月 - 2013年3月</div>
+                                <div class="font-bold text-gray-800">名古屋大学 情報連携統括本部</div>
+                                <div class="text-gray-600 text-sm">特任講師</div>
+                            </div>
+                        </div>
+                        
+                        <div class="relative flex items-start group">
+                            <div class="flex items-center justify-center w-5 h-5 rounded-full bg-gray-300 ring-4 ring-white z-10 mt-1 shrink-0"></div>
+                            <div class="ml-6 p-2 w-full">
+                                <div class="text-sm text-gray-500 font-medium mb-1">2010年4月 - 2012年3月</div>
+                                <div class="font-bold text-gray-800">東京大学 情報基盤センター</div>
+                                <div class="text-gray-600 text-sm">特任講師</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 flex items-center text-gray-800">
+                        <i class="fas fa-graduation-cap text-secondary mr-3 w-5 text-center"></i>学歴
+                    </h3>
+                    <div class="space-y-6 relative before:absolute before:inset-0 before:ml-2.5 before:-translate-x-px md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-gray-300 before:via-gray-300 before:to-transparent">
+                        
+                        <div class="relative flex items-start group">
+                            <div class="flex items-center justify-center w-5 h-5 rounded-full bg-accent text-white ring-4 ring-white z-10 mt-1 shrink-0"></div>
+                            <div class="ml-6 bg-white p-4 rounded-lg shadow-sm border border-gray-100 w-full">
+                                <div class="text-sm text-accent font-bold mb-1">2006年3月 修了</div>
+                                <div class="font-bold text-gray-800 text-lg">東京大学 新領域創成科学研究科</div>
+                                <div class="text-gray-600 font-medium">基盤情報学専攻 博士課程 (博士: 科学)</div>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-start group">
+                            <div class="flex items-center justify-center w-5 h-5 rounded-full bg-gray-300 ring-4 ring-white z-10 mt-1 shrink-0"></div>
+                            <div class="ml-6 p-2 w-full">
+                                <div class="text-sm text-gray-500 font-medium mb-1">2003年3月 修了</div>
+                                <div class="font-bold text-gray-800">東京大学 新領域創成科学研究科</div>
+                                <div class="text-gray-600 text-sm">基盤情報学専攻 修士課程</div>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-start group">
+                            <div class="flex items-center justify-center w-5 h-5 rounded-full bg-gray-300 ring-4 ring-white z-10 mt-1 shrink-0"></div>
+                            <div class="ml-6 p-2 w-full">
+                                <div class="text-sm text-gray-500 font-medium mb-1">2001年3月 卒業</div>
+                                <div class="font-bold text-gray-800">東京大学 工学部</div>
+                                <div class="text-gray-600 text-sm">電子工学科</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="scroll-mt-24">
+            <h2 class="text-2xl section-heading mb-8">主要な業績 (Main Publications)</h2>
+            
+            <!-- Books -->
+            <div class="mb-10">
+                <h3 class="text-xl font-semibold mb-4 text-gray-800 flex items-center border-l-4 border-secondary pl-3">著書</h3>
+                <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm flex items-start gap-4">
+                    <div class="bg-blue-50 text-secondary p-3 rounded-lg hidden sm:block">
+                        <i class="fas fa-book fa-2x"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-800">ディペンダビリティ保証入門</h4>
+                        <p class="text-gray-600 mt-1">安全分析・MBSE・アシュアランスケースによる統合アプローチ</p>
+                        <p class="text-sm text-gray-500 mt-2 font-medium">松野裕, 高井利憲, 岡本圭史 | コロナ社 (2026年9月発行)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Papers -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-gray-800 flex items-center border-l-4 border-secondary pl-3">代表的な論文 (Recent Papers)</h3>
+                <div class="grid gap-4">
+                    
+                    <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
+                            <h4 class="text-[1.05rem] font-bold text-primary">Strategy-Aware Confidence Assessment with Stakeholder Consensus for Level 4 Automated Driving Assurance Cases</h4>
+                            <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded font-semibold mt-2 sm:mt-0 shrink-0">SAFECOMP 2026 WS</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-1">Yutaka Matsuno, Michio Hayashi, Tomoyuki Tsuchiya</p>
+                        <p class="text-xs text-gray-500">Computer Safety, Reliability, and Security. SAFECOMP 2026 Workshops LNCS(16869) (2026年9月)</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
+                            <h4 class="text-[1.05rem] font-bold text-primary">Adoption of Safety Standards in the Japanese Automotive Industry: A Consortium Study</h4>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded font-semibold mt-2 sm:mt-0 shrink-0">SafeComp 2026</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-1">Yutaka Matsuno, Shinobu Ochiai, Fumiaki Kono</p>
+                        <p class="text-xs text-gray-500">Proc. SafeComp 2026, LNCS(16868) (2026年8月)</p>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
+                            <h4 class="text-[1.05rem] font-bold text-primary">Stakeholder-Adaptive Safety Report Generation Using RAG and GSN</h4>
+                            <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded font-semibold mt-2 sm:mt-0 shrink-0">RE 2026</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-1">Hayato Kato, Michio Hayashi, Tomoyuki Tsuchiya, Minami Yoda, Yutaka Matsuno</p>
+                        <p class="text-xs text-gray-500">2026 IEEE 34th International Requirements Engineering Conference (RE) (2026年8月)</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
+                            <h4 class="text-[1.05rem] font-bold text-primary">Consensus Building in Level 4 Automated Driving Field Trials Through Assurance Cases</h4>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded font-semibold mt-2 sm:mt-0 shrink-0">SafeComp 2025</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-1">Yutaka Matsuno, Michio Hayashi, Tomoyuki Tsuchiya</p>
+                        <p class="text-xs text-gray-500">Proc. SafeComp2025, LNCS15954 (2025年8月)</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
+                            <h4 class="text-[1.05rem] font-bold text-primary">Amplifiers or Equalizers? A Longitudinal Study of LLM Evolution in Software Engineering Project-Based Learning</h4>
+                            <span class="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded font-semibold mt-2 sm:mt-0 shrink-0">ICSE-SEET 2026</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-1">Hana Kataoka, Jialong Li, Yutaka Matsuno</p>
+                        <p class="text-xs text-gray-500">ICSE-SEET '26: Proc. of the IEEE/ACM 48th International Conference on Software Engineering (2026年4月)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Awards Section -->
+            <section id="awards" class="scroll-mt-24">
+                <h2 class="text-2xl section-heading mb-6">受賞 (Awards)</h2>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4 bg-white p-4 rounded-lg border border-gray-100 shadow-sm">
+                        <i class="fas fa-trophy text-yellow-500 text-xl mt-1 w-6 text-center"></i>
+                        <div>
+                            <div class="flex items-baseline gap-2 mb-1">
+                                <h4 class="font-bold text-gray-800">学生奨励賞</h4>
+                                <span class="text-xs text-gray-500 font-medium">2024年12月</span>
+                            </div>
+                            <p class="text-sm text-gray-600">複雑システムに対応する保証付き階層化安全分析手法 STPA-Refine</p>
+                            <p class="text-xs text-gray-500 mt-1">AI/IoTシステム安全性シンポジウム実行委員会</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4 bg-white p-4 rounded-lg border border-gray-100 shadow-sm">
+                        <i class="fas fa-medal text-yellow-500 text-xl mt-1 w-6 text-center"></i>
+                        <div>
+                            <div class="flex items-baseline gap-2 mb-1">
+                                <h4 class="font-bold text-gray-800">最優秀論文発表賞</h4>
+                                <span class="text-xs text-gray-500 font-medium">2023年12月</span>
+                            </div>
+                            <p class="text-sm text-gray-600">大学研究室におけるディペンダブルなアジャイルプロセス開発の実践</p>
+                            <p class="text-xs text-gray-500 mt-1">日本ソフトウェア科学会ディペンダブルシステム研究会</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 bg-white p-4 rounded-lg border border-gray-100 shadow-sm">
+                        <i class="fas fa-award text-yellow-500 text-xl mt-1 w-6 text-center"></i>
+                        <div>
+                            <div class="flex items-baseline gap-2 mb-1">
+                                <h4 class="font-bold text-gray-800">優秀ポスター発表賞</h4>
+                                <span class="text-xs text-gray-500 font-medium">2019年12月</span>
+                            </div>
+                            <p class="text-sm text-gray-600">開発・運用アシュアランスケースによる機械学習システムのディペンダビリティ保証</p>
+                            <p class="text-xs text-gray-500 mt-1">日本ソフトウエア科学会ディペンダブルシステム研究会</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grants Section -->
+            <section id="grants" class="scroll-mt-24">
+                <h2 class="text-2xl section-heading mb-6">競争的資金 (Grants & Projects)</h2>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm hover:border-blue-200 transition-colors">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded font-semibold">科研費 基盤研究(C)</span>
+                            <span class="text-sm text-gray-500 font-medium">2024.4 - 2028.3</span>
+                        </div>
+                        <h4 class="font-bold text-gray-800 text-sm mb-1 leading-snug">複雑システムに対応する保証付き階層化安全分析手法STPA-Refine</h4>
+                        <p class="text-xs text-gray-600">研究分担者 (代表: 岡本 圭史)</p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm hover:border-blue-200 transition-colors">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded font-semibold">科研費 基盤研究(B)</span>
+                            <span class="text-sm text-gray-500 font-medium">2023.4 - 2026.3</span>
+                        </div>
+                        <h4 class="font-bold text-gray-800 text-sm mb-1 leading-snug">アシュアランスケース自動合成のためのプログラム可能な記述言語の開発</h4>
+                        <p class="text-xs text-gray-600">研究分担者 (代表: 山形 頼之)</p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm hover:border-blue-200 transition-colors">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded font-semibold">科研費 基盤研究(C)</span>
+                            <span class="text-sm text-gray-500 font-medium">2020.4 - 2023.3</span>
+                        </div>
+                        <h4 class="font-bold text-gray-800 text-sm mb-1 leading-snug">DevOpsアシュアランスケースによる機械学習システムのディペンダビリティ保証</h4>
+                        <p class="text-xs text-gray-600">研究代表者: 松野 裕</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-10 mt-12 border-t border-slate-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold text-white mb-1">松野 裕 (Yutaka MATSUNO)</h3>
+                    <p class="text-sm text-slate-400">日本大学 理工学部 応用情報工学科</p>
+                </div>
+                <div class="flex space-x-5 justify-center">
+                    <a href="https://www.matsulab.org/" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-secondary hover:text-white transition-all" target="_blank" rel="noopener noreferrer" aria-label="Official Website">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                    <a href="https://orcid.org/0000-0001-9809-0814" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-[#A6CE39] hover:text-white transition-all" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+                        <i class="fab fa-orcid"></i>
+                    </a>
+                    <a href="https://researchmap.jp/yutaka_matsuno" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-800 hover:text-white transition-all" target="_blank" rel="noopener noreferrer" aria-label="researchmap">
+                        <i class="fas fa-address-card"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; <span id="year"></span> Yutaka Matsuno. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">
+                    Source data: <a href="https://researchmap.jp/yutaka_matsuno" target="_blank" class="hover:text-slate-300 underline underline-offset-2">researchmap</a>
+                    <span class="mx-2">|</span>
+                    Last updated: Nov 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
